@@ -1,8 +1,11 @@
-import { ComponentRef, ComponentFactoryResolver, Injector, ApplicationRef, Type, EmbeddedViewRef } from '@angular/core';
+import { Injectable, ComponentRef, ComponentFactoryResolver, Injector, ApplicationRef, Type, EmbeddedViewRef } from '@angular/core';
 import { AttachViewComponent } from './attach-view.component';
 import { AttachViewRef } from './attach-view-ref';
 import { mapTo } from 'rxjs/operators';
 
+@Injectable({
+  providedIn: 'root'
+})
 export abstract class AttachViewService {
 
   constructor(
