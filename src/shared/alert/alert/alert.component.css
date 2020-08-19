@@ -1,0 +1,48 @@
+.alert-container {
+    position: fixed;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    color:#DDDDDD;
+    background-color: rgba(0, 0, 0, .85);
+    padding: .65rem 1.25rem;
+    margin: auto;
+    max-width: 600px;
+    border-radius: 8px;
+    transition: .3s;
+    animation-name: slideIn;
+    animation-duration: .3s;
+    z-index: 1052;
+}
+
+.alert-container.closed {
+    opacity: 0;
+}
+
+.message {
+    padding-right: 1.25rem;
+}
+
+.close-btn {
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
