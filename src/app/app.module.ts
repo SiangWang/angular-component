@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlertModule } from 'src/shared/alert/alert.module';
 
 @NgModule({
   declarations: [
@@ -10,8 +9,7 @@ import { AlertModule } from 'src/shared/alert/alert.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AlertModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,10 @@
 .alert-container {
-    position: fixed;
     left: 15px;
     right: 15px;
     bottom: 5px;
-    display: flex;
-    justify-content: space-between;
     color:#DDDDDD;
     background-color: rgba(0, 0, 0, .85);
     padding: .65rem 1.25rem;
-    margin: auto;
     max-width: 600px;
     border-radius: 8px;
     transition: .3s;
@@ -26,9 +22,8 @@
 }
 
 .close-btn {
-    font-size: 18px;
-    padding: 4px;
-    cursor: pointer;
+    color: inherit;
+    outline: none;
 }
 
 .close-btn:hover {

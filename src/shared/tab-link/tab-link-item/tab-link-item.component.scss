@@ -1,0 +1,22 @@
+@import "src/styles/bootstrap-custom.scss";
+
+.tab-link-item {
+    display: block;
+    color: inherit;
+    padding: 10px 18px;
+    text-decoration: none!important;
+    white-space: nowrap;
+    transition: background-color .2s;
+}
+
+.tab-link-item:hover {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.tab-link-item.active {
+    color: $warning;
+    border-bottom: 3px solid $warning;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

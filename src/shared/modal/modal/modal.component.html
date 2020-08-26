@@ -1,0 +1,18 @@
+<div class="align-items-center d-flex justify-content-center modal-bg position-fixed">
+    <div #container class="d-flex flex-column flex-grow-1 mh-100 modal-container w-100" [style.maxWidth]="(instaData.width || 500) + 'px'">
+        <div class="bg-primary d-flex justify-content-between px-4 py-3 text-white title">
+            <div>{{instaData.title | translate}}</div>
+            <i class="fas fa-times close-btn ml-2" (click)="onClose()"></i>
+        </div>
+        <div class="overflow-auto px-4 py-3 bg-white">
+            <ng-container *ngIf="contentIsString">{{instaData.content.template | translate}}</ng-container>
+            <ng-template appModalContent></ng-template>
+        </div>
+        <div *ngIf="instaData.actions?.length > 0" class="footer border-top d-flex justify-content-end px-4 py-2 bg-white">
+            <button *ngFor="let action of instaData.actions; first as isFirst" class="btn btn-outline-primary" [class.ml-2]="!isFirst"
+                (click)="onClose(action)">
+                {{action.text | translate}}
+            </button>
+        </div>
+    </div>
+</div>

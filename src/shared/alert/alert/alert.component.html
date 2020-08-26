@@ -1,4 +1,6 @@
-<div #container class="alert-container">
+<div #container class="position-fixed d-flex justify-content-between m-auto alert-container">
     <div class="message">{{instaData}}</div>
-    <i class="fas fa-times close-btn" (click)="close(0)"></i>
+    <button class="border-0 bg-transparent close-btn" (click)="close(0)">
+        <i class="fas fa-times"></i>
+    </button>
 </div>

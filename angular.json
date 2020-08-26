@@ -29,11 +29,13 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/scss/bootstrap.scss"
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
             ]
           },
           "configurations": {
