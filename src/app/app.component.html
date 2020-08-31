@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<header class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand py-0" routerLink="">
             <i class="fas fa-hippo"></i>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -18,10 +18,10 @@
             </ul>
         </div>
     </div>
-</nav>
+</header>
 <div *ngTemplateOutlet="banner | async"></div>
-<div class="container" style="height: calc(100% - 56px);">
-    <main role="main" class="h-100">
+<div class="container">
+    <main role="main">
         <router-outlet></router-outlet>
     </main>
 </div>
