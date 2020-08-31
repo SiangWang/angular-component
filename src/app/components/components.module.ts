@@ -7,7 +7,7 @@ import { AlertModule } from 'src/shared/alert/alert.module';
 import { ModalModule } from 'src/shared/modal/modal.module';
 import { TabLinkModule } from 'src/shared/tab-link/tab-link.module';
 import { ModalPageComponent } from './modal-page/modal-page.component';
-import { TempComponent } from './modal-page/temp/temp.component';
+import { TempComponent } from './modal-page/temp.component';
 import { TabLinkPageComponent } from './tab-link-page/tab-link-page.component';
 import { Page1Component } from './tab-link-page/page1.component';
 import { Page2Component } from './tab-link-page/page2.component';
