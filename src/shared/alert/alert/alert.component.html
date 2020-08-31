@@ -1,6 +1,6 @@
-<div #container class="position-fixed d-flex justify-content-between m-auto alert-container">
-    <div class="message">{{instaData}}</div>
-    <button class="border-0 bg-transparent close-btn" (click)="close(0)">
-        <i class="fas fa-times"></i>
+<div #container class="alert alert-warning alert-container position-fixed mx-auto">
+    {{instaData}}
+    <button type="button" class="close" (click)="close(0)">
+        <span aria-hidden="true">&times;</span>
     </button>
 </div>

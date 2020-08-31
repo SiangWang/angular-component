@@ -1,0 +1,19 @@
+button[data-toggle] {
+    border: none;
+    outline: none;
+}
+
+.links {
+    margin-left: -15px!important;
+    margin-right: -15px!important;
+}
+
+a {
+    &:not(.btn) {
+        font-size: 18px;
+    }
+
+    &.active {
+        font-weight: 600;
+    }
+}

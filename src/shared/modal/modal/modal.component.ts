@@ -14,7 +14,7 @@ import { ModalContentDirective } from '../modal-content.directive';
 })
 export class ModalComponent extends AttachViewComponent<ModalResult> implements OnInit, OnDestroy {
 
-  @ViewChild('container', { static: false }) container: ElementRef;
+  @ViewChild('modalContent', { static: false }) modalContent: ElementRef;
   @ViewChild(ModalContentDirective, { static: true }) mdTemplate: ModalContentDirective;
 
   private contentRef: ComponentRef<ModalContentComponent>;
@@ -68,7 +68,7 @@ export class ModalComponent extends AttachViewComponent<ModalResult> implements 
       }
     }
 
-    (this.container.nativeElement as HTMLElement).classList.add('zoomOut');
+    (this.modalContent.nativeElement as HTMLElement).classList.add('zoomOut');
     setTimeout(() =>
       this.detach(
         new ModalResult(

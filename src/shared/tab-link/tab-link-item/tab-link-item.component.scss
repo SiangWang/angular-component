@@ -1,4 +1,4 @@
-@import "src/styles/bootstrap-custom.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 .tab-link-item {
     display: block;
@@ -15,8 +15,8 @@
 }
 
 .tab-link-item.active {
-    color: $warning;
-    border-bottom: 3px solid $warning;
+    color: $primary;
+    border-bottom: 3px solid $primary;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
