@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, TemplateRef, OnDestroy } from '@angular/core';
-import { BannerService } from 'src/services/banner.service';
+import { BannerService } from 'src/app/services/banner.service';
 
 @Component({
   selector: 'app-home',

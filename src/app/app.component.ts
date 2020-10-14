@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BannerService } from '../services/banner.service';
+import { BannerService } from './services/banner.service';
 
 @Component({
   selector: 'app-root',

@@ -7,6 +7,7 @@ import { TabLinkPageComponent } from './tab-link-page/tab-link-page.component';
 import { Page1Component } from './tab-link-page/page1.component';
 import { Page2Component } from './tab-link-page/page2.component';
 import { Page3Component } from './tab-link-page/page3.component';
+import { PaginationPageComponent } from './pagination-page/pagination-page.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,10 @@ const routes: Routes = [
           { path: 'page3', component: Page3Component },
           { path: '', redirectTo: 'page1' }
         ]
+      },
+      {
+        path: 'pagination',
+        component: PaginationPageComponent
       },
       {
         path: '',

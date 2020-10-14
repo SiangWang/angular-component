@@ -1,0 +1,20 @@
+<div class="align-items-center d-flex justify-content-center modal-bg position-fixed">
+    <div #modalContent class="modal-content d-flex flex-column flex-grow-1 mh-100 w-100 rounded-lg bg-white"
+        [style.maxWidth]="(instaData.width || 500) + 'px'">
+        <div class="modal-header">
+            <h5 class="modal-title">{{instaData.title}}</h5>
+            <button type="button" class="close" (click)="onClose()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body overflow-auto">
+            <ng-container *ngIf="contentIsString">{{instaData.content.template}}</ng-container>
+            <ng-template appModalContent></ng-template>
+        </div>
+        <div *ngIf="instaData.actions?.length > 0" class="modal-footer">
+            <button *ngFor="let action of instaData.actions" class="btn btn-primary" (click)="onClose(action)">
+                {{action.text}}
+            </button>
+        </div>
+    </div>
+</div>

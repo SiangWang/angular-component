@@ -1,5 +1,5 @@
 import { Component, OnDestroy } from '@angular/core';
-import { ModalService } from 'src/shared/modal/modal.service';
+import { ModalService } from 'src/app/shared/modal/modal.service';
 import { TempComponent } from './temp.component';
 import { Subscription } from 'rxjs';
 

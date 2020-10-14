@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertService } from 'src/shared/alert/alert.service';
+import { AlertService } from 'src/app/shared/alert/alert.service';
 
 @Component({
   selector: 'app-alert-page',

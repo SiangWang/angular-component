@@ -1,0 +1,46 @@
+.modal-bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1051;
+}
+
+.modal-content {    
+    animation-name: zoomIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.modal-content.zoomOut {
+    animation-name: zoomOut;
+}
+
+.close {
+    outline: none;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+}

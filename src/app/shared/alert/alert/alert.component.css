@@ -1,0 +1,30 @@
+.alert-container {
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    max-width: 600px;    
+    transition: .3s;
+    animation-name: slideIn;
+    animation-duration: .3s;
+    z-index: 1052;
+}
+
+.alert-container.closed {
+    opacity: 0;
+}
+
+.close {
+    outline: none;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
